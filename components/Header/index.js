@@ -17,7 +17,7 @@ function Header() {
 
   //create classes for each header element with a class
   header.classList.add('header');
-  date.temp.classList.add('date');
+  date.classList.add('date');
   temp.classList.add('temp');
 
   //create date, header, and temp reading content

@@ -17,3 +17,21 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+
+//create success and failure case for promise with props to Twitter for error message
+
+.then(items => {
+    const javaArticles = items.data.articles.javascript;
+    const bootStrapArticles = items.data.articles.bootstrap;
+    const techArticles = items.data.articles.technology;
+    const jqueryArticles = items.data.articles.jquery;
+    const nodeArticles = items.data.articles.node;
+
+    console.log('It works, cards', items)
+})
+
+.catch(error => {
+    console.log("Sorry, something went wrong. A team of highly trained monkeys has been dispatched to deal with this situation", error);
+})
