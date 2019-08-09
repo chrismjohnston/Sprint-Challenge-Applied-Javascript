@@ -29,6 +29,11 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     const jqueryArticles = items.data.articles.jquery;
     const nodeArticles = items.data.articles.node;
 
+    //create an array for the forEach to loop over
+    const articles = [javaArticles, bootStrapArticles, techArticles, jqueryArticles, nodeArticles]
+
+    
+
     console.log('It works, cards', items)
 })
 
