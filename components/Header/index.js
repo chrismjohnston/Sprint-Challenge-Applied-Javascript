@@ -24,4 +24,15 @@ function Header() {
   date.textContent = 'SMarch 28, 2019';
   head.textContent = 'Lambda Times';
   temp.textContent = '98°';
+
+  //create order for elements
+  header.appendChild(date);
+  header.appendChild(head);
+  header.appendChild(temp);
+
+  return header;
 }
+
+//mount the content to the page
+const headerContainer = document.querySelector('.header-container');
+headerContainer.appendChild(Header())
