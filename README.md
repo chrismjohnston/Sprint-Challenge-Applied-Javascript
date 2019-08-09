@@ -30,6 +30,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+**The DOM is essentially an API for accessing your HTML files.**
+
 2. What is an event?
 
 3. What is an event listener?
@@ -55,7 +57,7 @@ Your finished project must include all of the following requirements:
 
 * [x] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [x] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
