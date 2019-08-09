@@ -32,7 +32,13 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     //create an array for the forEach to loop over
     const articles = [javaArticles, bootStrapArticles, techArticles, jqueryArticles, nodeArticles]
 
-    
+    articles.forEach(article => {
+        article.forEach(art => {
+            const cards = document.querySelector('.cards-container');
+            cards.addEventListener(Article(art));
+        })
+        
+    })
 
     console.log('It works, cards', items)
 })
@@ -40,3 +46,10 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .catch(error => {
     console.log("Sorry, something went wrong. A team of highly trained monkeys has been dispatched to deal with this situation", error);
 })
+
+function Article(obj){
+    //created the necessary elements in the DOM for the card container
+    const card = document.createElement('div');
+
+    return card;
+}
